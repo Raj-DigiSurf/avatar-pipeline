@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Claude Code local settings
+.claude/
+
+# Temp pipeline output
+output/
+
+# Avatar source files (large; commit separately or document location)
+avatars/*.mp4
+avatars/*.mov
+avatars/*_enhanced.png
+avatars/*_enhanced.jpg
+
+# Dependencies cloned locally
+deps/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db

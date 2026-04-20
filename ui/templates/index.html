@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avatar Pipeline</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           background: #0f1117; color: #e2e8f0; min-height: 100vh; }
+
+    header { background: #1a1d2e; border-bottom: 1px solid #2d3748; padding: 18px 32px;
+             display: flex; align-items: center; gap: 16px; }
+    header h1 { font-size: 1.25rem; font-weight: 600; }
+    header .badge { background: #2d6a4f; color: #b7e4c7; font-size: 0.75rem;
+                    padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+    header .badge.running { background: #7c3aed; color: #ede9fe; animation: pulse 1.5s infinite; }
+
+    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.6 } }
+
+    main { max-width: 1100px; margin: 32px auto; padding: 0 24px; display: grid;
+           grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    .card { background: #1a1d2e; border: 1px solid #2d3748; border-radius: 12px; padding: 24px; }
+    .card h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: .08em;
+               color: #718096; margin-bottom: 16px; }
+
+    /* stat grid */
+    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; grid-column: 1/-1; }
+    .stat { background: #1a1d2e; border: 1px solid #2d3748; border-radius: 10px;
+            padding: 18px; text-align: center; }
+    .stat .num { font-size: 2rem; font-weight: 700; color: #63b3ed; }
+    .stat .lbl { font-size: 0.78rem; color: #718096; margin-top: 4px; }
+
+    /* avatar status */
+    .avatar-row { display: flex; align-items: center; gap: 10px; padding: 8px 0;
+                  border-bottom: 1px solid #2d3748; }
+    .avatar-row:last-child { border-bottom: none; }
+    .avatar-row .name { flex: 1; font-size: 0.9rem; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+    .dot.ok  { background: #48bb78; }
+    .dot.bad { background: #fc8181; }
+    .tag { font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 500; }
+    .tag.ok  { background: #276749; color: #c6f6d5; }
+    .tag.bad { background: #742a2a; color: #fed7d7; }
+
+    /* run form */
+    .run-form { grid-column: 1 / -1; }
+    label { display: block; font-size: 0.82rem; color: #a0aec0; margin-bottom: 6px; margin-top: 14px; }
+    label:first-child { margin-top: 0; }
+    select, input[type=number] {
+      width: 100%; background: #0f1117; border: 1px solid #4a5568; border-radius: 6px;
+      color: #e2e8f0; padding: 8px 12px; font-size: 0.9rem; }
+    .row { display: flex; gap: 12px; align-items: flex-end; }
+    .row > div { flex: 1; }
+    .checkrow { display: flex; align-items: center; gap: 8px; margin-top: 14px; }
+    .checkrow input { width: auto; }
+    .checkrow label { margin: 0; color: #e2e8f0; }
+
+    .btn { padding: 10px 24px; border-radius: 8px; font-size: 0.9rem; font-weight: 600;
+           cursor: pointer; border: none; transition: opacity .15s; }
+    .btn:hover { opacity: .85; }
+    .btn-run  { background: #4299e1; color: #fff; }
+    .btn-stop { background: #fc8181; color: #1a202c; }
+    .btn-disabled { opacity: .4; cursor: not-allowed; }
+    .actions { margin-top: 20px; display: flex; gap: 12px; }
+
+    /* log */
+    .log-box { grid-column: 1 / -1; }
+    #log { background: #0f1117; border: 1px solid #2d3748; border-radius: 8px;
+           padding: 14px; font-family: "Courier New", monospace; font-size: 0.78rem;
+           color: #a0aec0; height: 280px; overflow-y: auto; white-space: pre-wrap; }
+    #log .err { color: #fc8181; }
+    #log .ok  { color: #48bb78; }
+
+    /* errors table */
+    .err-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .err-table th { text-align: left; padding: 6px 10px; color: #718096;
+                    border-bottom: 1px solid #2d3748; }
+    .err-table td { padding: 6px 10px; border-bottom: 1px solid #1e2435;
+                    color: #e2e8f0; word-break: break-all; }
+    .empty { color: #4a5568; font-size: 0.85rem; padding: 16px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Avatar Pipeline</h1>
+  <span class="badge {{ 'running' if running else '' }}" id="status-badge">
+    {{ 'Running...' if running else 'Idle' }}
+  </span>
+</header>
+
+<main>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat">
+      <div class="num">{{ content_stats.part1.topics }}</div>
+      <div class="lbl">Part 1 Topics</div>
+    </div>
+    <div class="stat">
+      <div class="num">{{ content_stats.part2.videos }}</div>
+      <div class="lbl">Part 2 Cue Cards</div>
+    </div>
+    <div class="stat">
+      <div class="num">{{ content_stats.part3.topics }}</div>
+      <div class="lbl">Part 3 Sets</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="total-videos">{{ content_stats.total }}</div>
+      <div class="lbl">Total Videos</div>
+    </div>
+  </div>
+
+  <!-- Avatar status -->
+  <div class="card">
+    <h2>Avatar Status</h2>
+    {% for name, s in avatar_status.items() %}
+    <div class="avatar-row">
+      <span class="dot {{ 'ok' if s.ready else 'bad' }}"></span>
+      <span class="name">{{ name.replace('_', ' ').title() }}</span>
+      <span class="tag {{ 'ok' if s.png else 'bad' }}">PNG</span>
+      <span class="tag {{ 'ok' if s.mp4 else 'bad' }}">MP4</span>
+    </div>
+    {% endfor %}
+    <p style="font-size:.75rem;color:#718096;margin-top:12px">
+      Run <code>tools/generate_avatars_sd.py</code> (GPU) then
+      <code>tools/image_to_video.py</code> to prepare avatars.
+    </p>
+  </div>
+
+  <!-- Run form -->
+  <div class="card run-form">
+    <h2>Run Batch</h2>
+
+    <label>Exercise file</label>
+    <select id="sel-exercises">
+      {% for f in exercise_files %}
+      <option value="{{ f.path }}">{{ f.label }} ({{ f.count }} entries)</option>
+      {% endfor %}
+    </select>
+
+    <div class="row">
+      <div>
+        <label>Limit (optional — leave blank for all)</label>
+        <input type="number" id="inp-limit" placeholder="e.g. 5" min="1">
+      </div>
+      <div>
+        <label>Lip-sync backend</label>
+        <select id="sel-backend">
+          <option value="">Use .env default</option>
+          <option value="musetalk">MuseTalk</option>
+          <option value="sadtalker">SadTalker</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="checkrow">
+      <input type="checkbox" id="chk-noupload">
+      <label for="chk-noupload">Dry run (skip R2 upload + DB update)</label>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-run {{ 'btn-disabled' if running else '' }}"
+              id="btn-run" onclick="runBatch()" {{ 'disabled' if running else '' }}>
+        Run Batch
+      </button>
+      <button class="btn btn-stop {{ '' if running else 'btn-disabled' }}"
+              id="btn-stop" onclick="stopBatch()" {{ '' if running else 'disabled' }}>
+        Stop
+      </button>
+    </div>
+  </div>
+
+  <!-- Log -->
+  <div class="card log-box">
+    <h2>Live Log <span style="font-size:.75rem;color:#4a5568;font-weight:400;text-transform:none">(auto-refreshes every 3s while running)</span></h2>
+    <div id="log">Loading…</div>
+  </div>
+
+  <!-- Errors -->
+  <div class="card" style="grid-column:1/-1">
+    <h2>Failed Exercises</h2>
+    <div id="err-container"><p class="empty">No errors recorded.</p></div>
+  </div>
+
+</main>
+
+<script>
+  let pollInterval = null;
+
+  async function fetchLog() {
+    const r = await fetch("/api/log?lines=150");
+    const d = await r.json();
+    const box = document.getElementById("log");
+    box.innerHTML = d.lines.map(l => {
+      if (l.includes("ERROR") || l.includes("FAIL")) return `<span class="err">${esc(l)}</span>`;
+      if (l.includes("Done") || l.includes("Uploaded") || l.includes("OK")) return `<span class="ok">${esc(l)}</span>`;
+      return esc(l);
+    }).join("\n");
+    box.scrollTop = box.scrollHeight;
+  }
+
+  async function fetchErrors() {
+    const r = await fetch("/api/errors");
+    const d = await r.json();
+    const c = document.getElementById("err-container");
+    if (!d.errors.length) { c.innerHTML = '<p class="empty">No errors recorded.</p>'; return; }
+    c.innerHTML = `<table class="err-table">
+      <thead><tr><th>Exercise ID</th><th>Error</th></tr></thead>
+      <tbody>${d.errors.map(e => `<tr><td>${esc(e.id)}</td><td>${esc(e.error)}</td></tr>`).join("")}</tbody>
+    </table>`;
+  }
+
+  async function fetchStatus() {
+    const r = await fetch("/api/status");
+    const d = await r.json();
+    const badge = document.getElementById("status-badge");
+    const btnRun  = document.getElementById("btn-run");
+    const btnStop = document.getElementById("btn-stop");
+    badge.textContent = d.running ? "Running..." : "Idle";
+    badge.className   = "badge" + (d.running ? " running" : "");
+    btnRun.disabled  = d.running;
+    btnStop.disabled = !d.running;
+    btnRun.classList.toggle("btn-disabled",  d.running);
+    btnStop.classList.toggle("btn-disabled", !d.running);
+    if (!d.running && pollInterval) {
+      clearInterval(pollInterval);
+      pollInterval = null;
+    }
+  }
+
+  async function runBatch() {
+    const exercises = document.getElementById("sel-exercises").value;
+    const limit     = document.getElementById("inp-limit").value;
+    const backend   = document.getElementById("sel-backend").value;
+    const no_upload = document.getElementById("chk-noupload").checked;
+    const r = await fetch("/api/run", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ exercises, limit: limit ? parseInt(limit) : null, no_upload, backend: backend || null }),
+    });
+    const d = await r.json();
+    if (d.error) { alert(d.error); return; }
+    startPolling();
+  }
+
+  async function stopBatch() {
+    await fetch("/api/stop", { method: "POST" });
+    fetchStatus();
+  }
+
+  function startPolling() {
+    fetchLog(); fetchErrors(); fetchStatus();
+    if (!pollInterval) pollInterval = setInterval(() => { fetchLog(); fetchErrors(); fetchStatus(); }, 3000);
+  }
+
+  function esc(s) {
+    return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+
+  // Initial load
+  fetchLog(); fetchErrors(); fetchStatus();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p1_001_q1",
+    "part": 1,
+    "avatar": "older_man",
+    "text": "How do you usually travel to work or college?"
+  },
+  {
+    "id": "p1_009_q1",
+    "part": 1,
+    "avatar": "older_man",
+    "text": "What is your favourite food?"
+  },
+  {
+    "id": "p2_001",
+    "part": 2,
+    "avatar": "woman",
+    "text": "Now I'm going to give you a topic. Describe something you did that was new or exciting. You should say: what you did; where and when you did this; who you shared the activity with; and explain why this activity was new or exciting for you. You have one minute to prepare, then speak for one to two minutes."
+  },
+  {
+    "id": "p2_003",
+    "part": 2,
+    "avatar": "woman",
+    "text": "Now I'm going to give you a topic. Describe a memorable journey or trip you have taken. You should say: where you went; who you went with; what you did there; and explain why this journey was memorable for you. You have one minute to prepare, then speak for one to two minutes."
+  },
+  {
+    "id": "p3_001_q1",
+    "part": 3,
+    "avatar": "younger_man",
+    "text": "Why do you think some people are more willing to try new things than others?"
+  }
+]

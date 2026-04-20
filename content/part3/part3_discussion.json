@@ -1,0 +1,602 @@
+[
+  {
+    "id": "p3_001",
+    "part": 3,
+    "linked_cuecard": "p2_001",
+    "linked_topic": "Doing New Things",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think some people are more willing to try new things than others?",
+      "Do you think it is important for young people to take risks and try new experiences? Why?",
+      "How has technology changed the range of new experiences available to people today?",
+      "Do you think society values people who take risks and try new things? Why or why not?",
+      "In what ways can trying new things contribute to a person's personal growth and development?"
+    ]
+  },
+  {
+    "id": "p3_002",
+    "part": 3,
+    "linked_cuecard": "p2_002",
+    "linked_topic": "A Person You Admire",
+    "category": "People",
+    "avatar": "younger_man",
+    "questions": [
+      "Who do people in your country most commonly admire — celebrities, politicians, or ordinary people?",
+      "Do you think young people today have good role models? Why or why not?",
+      "How important is it for young people to have someone to look up to?",
+      "Do you think social media has changed who people admire and look up to? How?",
+      "Should schools make a greater effort to teach children about historical figures they can admire?"
+    ]
+  },
+  {
+    "id": "p3_003",
+    "part": 3,
+    "linked_cuecard": "p2_003",
+    "linked_topic": "A Memorable Journey",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "How important do you think travel is for a person's personal development?",
+      "Do you think international travel has become too accessible? Are there any downsides to this?",
+      "How has tourism changed the way people understand and appreciate different cultures?",
+      "Do you think governments should do more to promote domestic tourism? Why?",
+      "What are the environmental consequences of modern travel, and what can be done to reduce them?"
+    ]
+  },
+  {
+    "id": "p3_004",
+    "part": 3,
+    "linked_cuecard": "p2_004",
+    "linked_topic": "A Favourite Place",
+    "category": "Places",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think some people feel very strongly attached to particular places?",
+      "How important are public spaces such as parks and squares in modern cities?",
+      "Do you think cities today provide enough spaces for people to relax and enjoy their surroundings?",
+      "How has urbanisation changed people's relationship with natural environments?",
+      "What responsibilities do governments have in preserving places that are important to local communities?"
+    ]
+  },
+  {
+    "id": "p3_005",
+    "part": 3,
+    "linked_cuecard": "p2_005",
+    "linked_topic": "A Special Occasion",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "How important do you think it is for people to celebrate significant occasions together?",
+      "Do you think celebrations today have become too commercialised? Why do you think that is?",
+      "How have traditional celebrations changed in your country over recent generations?",
+      "Do you think national celebrations help to bring communities together? In what ways?",
+      "Are there any celebrations that you feel have lost their original meaning or purpose over time?"
+    ]
+  },
+  {
+    "id": "p3_006",
+    "part": 3,
+    "linked_cuecard": "p2_006",
+    "linked_topic": "A Book or Film You Enjoyed",
+    "category": "Arts and Culture",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think people read fewer books today than in the past? What has caused this change?",
+      "What impact do books and films have on how people understand and relate to the wider world?",
+      "Should governments invest in supporting local film and book industries? Why?",
+      "How do you think digital media has changed people's reading and viewing habits?",
+      "Do you think it is important for children to read fiction as well as factual texts? Why?"
+    ]
+  },
+  {
+    "id": "p3_007",
+    "part": 3,
+    "linked_cuecard": "p2_007",
+    "linked_topic": "A Skill You Would Like to Learn",
+    "category": "Activities",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think it is important for people to continue learning new skills throughout their lives?",
+      "How has the internet changed the way people acquire new skills and knowledge?",
+      "What skills do you think will be most valuable in the future workplace? Why?",
+      "Should employers be responsible for helping their workers develop new skills? Why?",
+      "Do you think formal qualifications are more important than practical skills in today's job market?"
+    ]
+  },
+  {
+    "id": "p3_008",
+    "part": 3,
+    "linked_cuecard": "p2_008",
+    "linked_topic": "A Gift You Received",
+    "category": "Objects",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think people today place too much importance on material possessions? Why?",
+      "How do gift-giving traditions vary between different cultures around the world?",
+      "Do you think the tradition of giving gifts at celebrations is becoming more or less common?",
+      "Is it more meaningful to give someone an experience rather than a physical gift? Why?",
+      "How has online shopping changed the way people choose and buy gifts for others?"
+    ]
+  },
+  {
+    "id": "p3_009",
+    "part": 3,
+    "linked_cuecard": "p2_009",
+    "linked_topic": "A Childhood Memory",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "How important do you think childhood experiences are in shaping a person's character and values?",
+      "Do you think children today have a better childhood than children did a generation ago? Why?",
+      "How has technology changed the nature of childhood in your country?",
+      "Do you think parents today put too much pressure on their children to succeed?",
+      "Should children be given more freedom to play and explore independently, or do they benefit from more structure?"
+    ]
+  },
+  {
+    "id": "p3_010",
+    "part": 3,
+    "linked_cuecard": "p2_010",
+    "linked_topic": "Someone Who Has Helped You",
+    "category": "People",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think some people are more willing to help others than others are?",
+      "How important is it for communities to take responsibility for looking after vulnerable members?",
+      "Do you think people in cities are generally less willing to help strangers than people in rural areas?",
+      "Should volunteering and helping others be made a compulsory part of school education? Why?",
+      "In what ways has technology affected people's willingness and ability to help those in need?"
+    ]
+  },
+  {
+    "id": "p3_011",
+    "part": 3,
+    "linked_cuecard": "p2_011",
+    "linked_topic": "A Piece of Technology You Use",
+    "category": "Objects",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think people today have become too dependent on technology? In what ways?",
+      "How has technology fundamentally changed the way people communicate with each other?",
+      "What do you consider to be the most significant technological developments of the last decade?",
+      "Should access to technology and the internet be considered a basic human right? Why?",
+      "How do you think artificial intelligence will change daily life over the next twenty years?"
+    ]
+  },
+  {
+    "id": "p3_012",
+    "part": 3,
+    "linked_cuecard": "p2_012",
+    "linked_topic": "A Place You Would Like to Visit",
+    "category": "Places",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think people are so attracted to visiting new and unfamiliar places?",
+      "How has the rise of social media influenced the travel choices people make?",
+      "Do you think travel is the best way to learn about other cultures, or are there other equally effective ways?",
+      "What are the potential negative effects of mass tourism on popular destinations?",
+      "Do you think wealthier countries have a responsibility to make international travel more accessible to people from poorer nations?"
+    ]
+  },
+  {
+    "id": "p3_013",
+    "part": 3,
+    "linked_cuecard": "p2_013",
+    "linked_topic": "An Important Goal",
+    "category": "Activities",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think society places too much emphasis on achieving goals and being successful?",
+      "How does a person's family background affect their ability to achieve their goals in life?",
+      "Is it better to have one clear long-term goal in life, or to remain open to changing direction? Why?",
+      "Do you think the definition of success varies significantly between different cultures?",
+      "How can governments help people from disadvantaged backgrounds to achieve their ambitions?"
+    ]
+  },
+  {
+    "id": "p3_014",
+    "part": 3,
+    "linked_cuecard": "p2_014",
+    "linked_topic": "A Traditional Festival",
+    "category": "Arts and Culture",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think it is important for societies to maintain and pass on traditional celebrations?",
+      "How has globalisation affected traditional festivals and cultural celebrations in your country?",
+      "Do you think governments should invest public money in preserving and promoting cultural traditions?",
+      "What are the risks of commercialising traditional festivals and cultural events?",
+      "How can communities ensure that younger generations remain interested in and engaged with traditional culture?"
+    ]
+  },
+  {
+    "id": "p3_015",
+    "part": 3,
+    "linked_cuecard": "p2_015",
+    "linked_topic": "A Difficult Decision",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think the vast number of choices people face today makes decision-making more difficult? Why?",
+      "How do cultural values and family expectations influence the decisions people make in their personal lives?",
+      "Should schools spend more time teaching children how to make good decisions? How could this be done?",
+      "Do you think people today face more difficult decisions than previous generations did?",
+      "How does peer pressure influence the decisions that young people make about their lives?"
+    ]
+  },
+  {
+    "id": "p3_016",
+    "part": 3,
+    "linked_cuecard": "p2_016",
+    "linked_topic": "A Sport or Physical Activity You Enjoy",
+    "category": "Activities",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think participation in sport and physical activity is declining in many countries?",
+      "Do you think competitive sport teaches children valuable life skills? What kinds of skills?",
+      "Should governments do more to encourage people to exercise and stay physically active? How?",
+      "Do you think professional sports receive too much money compared to other sectors of society?",
+      "In what ways does sport contribute to national identity and cultural pride?"
+    ]
+  },
+  {
+    "id": "p3_017",
+    "part": 3,
+    "linked_cuecard": "p2_017",
+    "linked_topic": "A Famous Person You Would Like to Meet",
+    "category": "People",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think famous people tend to have such a strong influence on society?",
+      "Do you think celebrities have a responsibility to be good role models for their followers?",
+      "Has social media made it easier or harder to be a famous person in today's world? In what ways?",
+      "Do you think fame and genuine achievement always go hand in hand? Why or why not?",
+      "How do you think the nature of fame and celebrity culture has changed in the past twenty years?"
+    ]
+  },
+  {
+    "id": "p3_018",
+    "part": 3,
+    "linked_cuecard": "p2_018",
+    "linked_topic": "A Piece of Art or Music",
+    "category": "Arts and Culture",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think art and music are considered such important parts of human culture and history?",
+      "Should governments fund the arts with public money, or should arts organisations be entirely self-funding?",
+      "Do you think art and music education in schools should be given the same priority as science and mathematics?",
+      "How has digital technology changed the way people create, share, and consume art and music?",
+      "Do you think great art is something that everyone can appreciate naturally, or does it require education to understand?"
+    ]
+  },
+  {
+    "id": "p3_019",
+    "part": 3,
+    "linked_cuecard": "p2_019",
+    "linked_topic": "A Historical Building or Monument",
+    "category": "Places",
+    "avatar": "younger_man",
+    "questions": [
+      "Why is it important for societies to preserve historical buildings and monuments for future generations?",
+      "Should governments prioritise spending on new infrastructure or on preserving historical sites? Why?",
+      "How does the preservation of historical buildings benefit tourism and the local economy?",
+      "Do you think modern architecture can be as culturally valuable as historical architecture? Why?",
+      "What challenges do cities face when trying to balance economic development with heritage conservation?"
+    ]
+  },
+  {
+    "id": "p3_020",
+    "part": 3,
+    "linked_cuecard": "p2_020",
+    "linked_topic": "An Achievement You Are Proud Of",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "How do you think society defines achievement today, and do you think this definition is changing?",
+      "Do you think schools put too much pressure on students to achieve academically? What are the consequences?",
+      "Is it more important to achieve something as an individual or as part of a team? Why?",
+      "How do family expectations influence what a person aspires to achieve in life?",
+      "Do you think young people today face greater pressure to achieve than previous generations did?"
+    ]
+  },
+  {
+    "id": "p3_021",
+    "part": 3,
+    "linked_cuecard": "p2_022",
+    "linked_topic": "A Subject You Enjoyed Studying",
+    "category": "Activities",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think schools give students enough choice about which subjects they study? Why?",
+      "How important is it for schools to achieve a balance between academic, creative, and practical subjects?",
+      "How has the purpose of education changed over the past generation in your country?",
+      "Should students have more say in designing their own curriculum and learning path? Why or why not?",
+      "Do you think the education system in your country adequately prepares students for the modern working world?"
+    ]
+  },
+  {
+    "id": "p3_022",
+    "part": 3,
+    "linked_cuecard": "p2_023",
+    "linked_topic": "A Wild Animal",
+    "category": "Nature and Environment",
+    "avatar": "younger_man",
+    "questions": [
+      "How important is it for humans to protect wild animals and their natural habitats?",
+      "Do you think people who live in cities have lost their connection with nature and wildlife? Why?",
+      "What role should governments and international organisations play in protecting endangered species?",
+      "Do you think zoos are ultimately beneficial or harmful to wild animals? Why?",
+      "How can societies balance economic development with the need to protect natural habitats and biodiversity?"
+    ]
+  },
+  {
+    "id": "p3_023",
+    "part": 3,
+    "linked_cuecard": "p2_024",
+    "linked_topic": "A Hobby You Would Recommend",
+    "category": "Activities",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think people today have sufficient time for leisure activities and personal hobbies? Why?",
+      "How have hobbies and leisure activities changed over the past generation?",
+      "Should employers be required to give workers more time off to pursue personal interests and hobbies?",
+      "Do expensive hobbies create an unfair divide between people from different economic backgrounds?",
+      "How can having regular hobbies and leisure activities contribute to mental health and overall wellbeing?"
+    ]
+  },
+  {
+    "id": "p3_024",
+    "part": 3,
+    "linked_cuecard": "p2_025",
+    "linked_topic": "A Time You Helped Someone",
+    "category": "People",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think people in modern societies are less likely to help strangers than in the past? Why?",
+      "What role should governments play in encouraging citizens to help and support one another?",
+      "Is it more effective for local communities or for governments to provide support to people in need?",
+      "How does the way the media reports events influence people's willingness to help others?",
+      "Do you think there are significant cultural differences in how willing people are to help those they do not know?"
+    ]
+  },
+  {
+    "id": "p3_025",
+    "part": 3,
+    "linked_cuecard": "p2_026",
+    "linked_topic": "An Important Invention",
+    "category": "Technology",
+    "avatar": "younger_man",
+    "questions": [
+      "How do major inventions typically change the way societies function and develop over time?",
+      "Do you think some important inventions have ultimately had more negative effects than positive ones?",
+      "Should governments increase investment in scientific research and invention? How should this be funded?",
+      "How has the accelerating pace of technological invention affected everyday life in your country?",
+      "Do you think important inventions today are more likely to come from individuals or from large organisations?"
+    ]
+  },
+  {
+    "id": "p3_026",
+    "part": 3,
+    "linked_cuecard": "p2_027",
+    "linked_topic": "A City You Have Visited",
+    "category": "Travel and Tourism",
+    "avatar": "younger_man",
+    "questions": [
+      "What do you think are the most important factors that make a city a good place to live?",
+      "How has rapid urbanisation affected quality of life in developing countries?",
+      "Do you think cities around the world are becoming too similar to one another? Why?",
+      "What challenges do city planners face in making cities more sustainable and environmentally friendly?",
+      "How important is green space in urban environments, and who should be responsible for providing it?"
+    ]
+  },
+  {
+    "id": "p3_027",
+    "part": 3,
+    "linked_cuecard": "p2_028",
+    "linked_topic": "A Person Who Has Influenced You",
+    "category": "People",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think individuals can make a truly significant difference to society? How?",
+      "How important is mentorship in helping people succeed in their personal and professional lives?",
+      "Do you think the influence of family is stronger than the influence of teachers or peers on a person's development?",
+      "How do the media and celebrities shape the values and behaviour of young people?",
+      "In what ways can a single person change the course of history or the direction of a society?"
+    ]
+  },
+  {
+    "id": "p3_028",
+    "part": 3,
+    "linked_cuecard": "p2_029",
+    "linked_topic": "A Time You Felt Nervous",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think stress and anxiety are more widespread problems today than they were in the past? Why?",
+      "What do you consider to be the main causes of stress in modern society?",
+      "How can employers and schools do more to support people who are struggling with anxiety and stress?",
+      "Do you think society places too much pressure on individuals to perform and succeed at all times?",
+      "What steps can governments take to improve the mental health and emotional wellbeing of their citizens?"
+    ]
+  },
+  {
+    "id": "p3_029",
+    "part": 3,
+    "linked_cuecard": "p2_031",
+    "linked_topic": "A News Story That Interested You",
+    "category": "Technology",
+    "avatar": "younger_man",
+    "questions": [
+      "How has the rise of social media changed the way people access and consume news?",
+      "Do you think people today are generally better or worse informed about world events than in the past?",
+      "How important is a free and independent press in maintaining a healthy democratic society?",
+      "Do you think governments should have the power to regulate online news and social media content?",
+      "How can individuals protect themselves from misinformation and deliberately misleading content online?"
+    ]
+  },
+  {
+    "id": "p3_030",
+    "part": 3,
+    "linked_cuecard": "p2_032",
+    "linked_topic": "Something You Own That Is Important to You",
+    "category": "Daily Life",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think people in your country are becoming increasingly materialistic? Why?",
+      "How has consumerism changed people's values and priorities over the past generation?",
+      "What do you think are the main environmental consequences of high levels of consumption?",
+      "Should governments do more to discourage excessive consumption and waste? How could they do this?",
+      "Do you think it is possible to live a genuinely fulfilling life with very few material possessions?"
+    ]
+  },
+  {
+    "id": "p3_031",
+    "part": 3,
+    "linked_cuecard": "p2_034",
+    "linked_topic": "A Piece of Advice You Were Given",
+    "category": "People",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think young people today are less likely to seek or accept advice from older generations? Why?",
+      "How important is it for societies to respect and value the wisdom and experience of elderly people?",
+      "Do you think the rapid pace of change in modern life makes advice from older generations less relevant?",
+      "How has social media changed the way people seek, give, and share advice with one another?",
+      "What role should families play in passing on values, life skills, and wisdom to younger generations?"
+    ]
+  },
+  {
+    "id": "p3_032",
+    "part": 3,
+    "linked_cuecard": "p2_035",
+    "linked_topic": "A Traditional Food in Your Country",
+    "category": "Arts and Culture",
+    "avatar": "younger_man",
+    "questions": [
+      "How important do you think food is as a part of a nation's cultural identity?",
+      "Do you think globalisation is threatening traditional food cultures and culinary heritage? Why?",
+      "How have eating habits and food preferences changed in your country over the past generation?",
+      "Should governments invest in promoting traditional foods and cooking methods? How?",
+      "What are the advantages and disadvantages of the global fast food industry for local food cultures?"
+    ]
+  },
+  {
+    "id": "p3_033",
+    "part": 3,
+    "linked_cuecard": "p2_036",
+    "linked_topic": "A Time You Faced a Challenge",
+    "category": "Experiences",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think facing and overcoming challenges is essential for personal development? Why?",
+      "How important is social support from friends and family when someone is going through a difficult time?",
+      "Do you think young people today are less resilient than previous generations? What might explain this?",
+      "How can schools help children develop the ability to deal effectively with difficulties and setbacks?",
+      "What responsibilities do governments have in supporting citizens who face serious challenges in their lives?"
+    ]
+  },
+  {
+    "id": "p3_034",
+    "part": 3,
+    "linked_cuecard": "p2_037",
+    "linked_topic": "A Volunteer or Charity Experience",
+    "category": "Activities",
+    "avatar": "younger_man",
+    "questions": [
+      "Why do you think some people choose to give their time and energy to voluntary work?",
+      "Should voluntary work be made a compulsory part of school or university education? Why?",
+      "How effective are charities at solving social problems compared to direct government action?",
+      "Do you think wealthy individuals and large corporations have a greater responsibility to support charitable work?",
+      "How has social media changed the way people discover, support, and engage with charitable causes?"
+    ]
+  },
+  {
+    "id": "p3_035",
+    "part": 3,
+    "linked_cuecard": "p2_039",
+    "linked_topic": "A Piece of Clothing You Like",
+    "category": "Daily Life",
+    "avatar": "younger_man",
+    "questions": [
+      "How important is clothing and fashion as a form of personal expression and identity?",
+      "Do you think the fashion industry has a significant negative impact on the environment? Why?",
+      "How has the rise of fast fashion changed people's relationship with clothing and consumption?",
+      "Should consumers take greater personal responsibility for the environmental impact of what they buy?",
+      "Do you think school uniforms are a good idea? What are the arguments for and against them?"
+    ]
+  },
+  {
+    "id": "p3_036",
+    "part": 3,
+    "linked_cuecard": "p2_041",
+    "linked_topic": "A Website You Use Often",
+    "category": "Technology",
+    "avatar": "younger_man",
+    "questions": [
+      "How has the internet fundamentally changed the way people spend their free time?",
+      "Do you think people spend too much time online today? What are the main consequences of this?",
+      "Should internet access be considered a basic right for all people, regardless of where they live?",
+      "How can governments balance the freedom of expression online with the need to prevent harm and abuse?",
+      "Do you think large technology companies have too much power and influence in today's society?"
+    ]
+  },
+  {
+    "id": "p3_037",
+    "part": 3,
+    "linked_cuecard": "p2_042",
+    "linked_topic": "A Natural Place That Impressed You",
+    "category": "Nature and Environment",
+    "avatar": "younger_man",
+    "questions": [
+      "How important do you think it is for people — especially those living in cities — to have contact with natural environments?",
+      "Do you think governments are doing enough to protect the natural world from human activity? Why?",
+      "How has climate change visibly affected natural environments and wildlife in your country?",
+      "What can ordinary individuals do in their daily lives to help protect the natural environment?",
+      "Do you believe that economic development and strong environmental protection can genuinely be achieved at the same time?"
+    ]
+  },
+  {
+    "id": "p3_038",
+    "part": 3,
+    "linked_cuecard": "p2_044",
+    "linked_topic": "A Rule You Disagree With",
+    "category": "Society",
+    "avatar": "younger_man",
+    "questions": [
+      "How important is it for individuals to follow laws and rules, even when they personally disagree with them?",
+      "Do you think citizens have a responsibility to challenge laws they consider to be unjust? How?",
+      "How do social norms differ from laws, and which do you think has a greater influence on people's behaviour?",
+      "Do you think the legal system in your country treats all people fairly and equally? Why or why not?",
+      "How should governments decide which laws need to be updated or changed in response to shifts in society?"
+    ]
+  },
+  {
+    "id": "p3_039",
+    "part": 3,
+    "linked_cuecard": "p2_047",
+    "linked_topic": "A Time You Worked in a Team",
+    "category": "Work and Education",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think teamwork and collaboration skills are becoming more or less important in the modern workplace?",
+      "How can organisations create an environment that encourages better cooperation between their employees?",
+      "Do you think schools do enough to develop students' ability to work effectively in teams? Why?",
+      "What are the main advantages and disadvantages of working in a large team compared to working independently?",
+      "How do differences in culture or personality affect teamwork in an international working environment?"
+    ]
+  },
+  {
+    "id": "p3_040",
+    "part": 3,
+    "linked_cuecard": "p2_049",
+    "linked_topic": "A Memorable Teacher",
+    "category": "Work and Education",
+    "avatar": "younger_man",
+    "questions": [
+      "Do you think teachers are given sufficient respect and recognition in your society? Why?",
+      "How important is the role of the teacher compared to other factors in determining a student's success?",
+      "How has the role of teachers changed as a result of technology, the internet, and online learning?",
+      "Should teachers be paid significantly more? What effect do you think this would have on education quality?",
+      "What measures can governments take to attract and retain talented and motivated teachers in schools?"
+    ]
+  }
+]

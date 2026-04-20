@@ -1,0 +1,802 @@
+[
+  {
+    "id": "p2_001",
+    "part": 2,
+    "topic": "Doing New Things",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe something you did that was new or exciting.",
+    "bullet_points": [
+      "what you did",
+      "where and when you did this",
+      "who you shared the activity with",
+      "and explain why this activity was new or exciting for you"
+    ]
+  },
+  {
+    "id": "p2_002",
+    "part": 2,
+    "topic": "A Person You Admire",
+    "category": "People",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a person you admire.",
+    "bullet_points": [
+      "who this person is",
+      "how you know them or know about them",
+      "what they have achieved",
+      "and explain why you admire them"
+    ]
+  },
+  {
+    "id": "p2_003",
+    "part": 2,
+    "topic": "A Memorable Journey",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a memorable journey or trip you have taken.",
+    "bullet_points": [
+      "where you went",
+      "who you went with",
+      "what you did there",
+      "and explain why this journey was memorable for you"
+    ]
+  },
+  {
+    "id": "p2_004",
+    "part": 2,
+    "topic": "A Favourite Place",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a place you enjoy visiting.",
+    "bullet_points": [
+      "where this place is",
+      "how often you go there",
+      "what you do when you are there",
+      "and explain why you enjoy going to this place"
+    ]
+  },
+  {
+    "id": "p2_005",
+    "part": 2,
+    "topic": "A Special Occasion",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a special occasion you celebrated.",
+    "bullet_points": [
+      "what the occasion was",
+      "who you celebrated it with",
+      "what you did to celebrate",
+      "and explain why this occasion was special for you"
+    ]
+  },
+  {
+    "id": "p2_006",
+    "part": 2,
+    "topic": "A Book or Film You Enjoyed",
+    "category": "Arts and Culture",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a book or film you have enjoyed recently.",
+    "bullet_points": [
+      "what the book or film was about",
+      "when and where you read or watched it",
+      "who recommended it to you or how you found it",
+      "and explain why you enjoyed it"
+    ]
+  },
+  {
+    "id": "p2_007",
+    "part": 2,
+    "topic": "A Skill You Would Like to Learn",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a skill you would like to learn in the future.",
+    "bullet_points": [
+      "what the skill is",
+      "why you want to learn it",
+      "how you plan to learn it",
+      "and explain how this skill would be useful in your life"
+    ]
+  },
+  {
+    "id": "p2_008",
+    "part": 2,
+    "topic": "A Gift You Received",
+    "category": "Objects",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a gift you received that was important to you.",
+    "bullet_points": [
+      "what the gift was",
+      "who gave it to you and when",
+      "why this person gave you this gift",
+      "and explain why this gift was important or meaningful to you"
+    ]
+  },
+  {
+    "id": "p2_009",
+    "part": 2,
+    "topic": "A Childhood Memory",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a happy memory from your childhood.",
+    "bullet_points": [
+      "what happened",
+      "who was involved",
+      "where and when this memory is from",
+      "and explain why this memory is happy for you"
+    ]
+  },
+  {
+    "id": "p2_010",
+    "part": 2,
+    "topic": "Someone Who Has Helped You",
+    "category": "People",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a person who has helped you in an important way.",
+    "bullet_points": [
+      "who this person is",
+      "how this person helped you",
+      "when and why you needed help",
+      "and explain how this person's help affected your life"
+    ]
+  },
+  {
+    "id": "p2_011",
+    "part": 2,
+    "topic": "A Piece of Technology You Use",
+    "category": "Objects",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a piece of technology that you find useful.",
+    "bullet_points": [
+      "what the technology is",
+      "how long you have been using it",
+      "how you use it in your daily life",
+      "and explain why you find it so useful"
+    ]
+  },
+  {
+    "id": "p2_012",
+    "part": 2,
+    "topic": "A Place You Would Like to Visit",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a place you would like to visit in the future.",
+    "bullet_points": [
+      "where this place is",
+      "how you first heard about it",
+      "what you would do there",
+      "and explain why you would like to visit this place"
+    ]
+  },
+  {
+    "id": "p2_013",
+    "part": 2,
+    "topic": "An Important Goal",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe an important goal you have set for yourself.",
+    "bullet_points": [
+      "what the goal is",
+      "when you decided on this goal",
+      "what you are doing to achieve it",
+      "and explain why this goal is important to you"
+    ]
+  },
+  {
+    "id": "p2_014",
+    "part": 2,
+    "topic": "A Traditional Festival",
+    "category": "Arts and Culture",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a traditional festival or celebration in your country.",
+    "bullet_points": [
+      "what the festival is",
+      "when and how it is celebrated",
+      "who you celebrate it with",
+      "and explain why this festival is important in your culture"
+    ]
+  },
+  {
+    "id": "p2_015",
+    "part": 2,
+    "topic": "A Difficult Decision",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a difficult decision you have made.",
+    "bullet_points": [
+      "what the decision was",
+      "when you had to make this decision",
+      "how you made the decision",
+      "and explain what happened as a result of your decision"
+    ]
+  },
+  {
+    "id": "p2_016",
+    "part": 2,
+    "topic": "A Sport or Physical Activity You Enjoy",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a sport or physical activity you enjoy.",
+    "bullet_points": [
+      "what the sport or activity is",
+      "how long you have been doing it",
+      "who you do it with",
+      "and explain why you enjoy it"
+    ]
+  },
+  {
+    "id": "p2_017",
+    "part": 2,
+    "topic": "A Famous Person You Would Like to Meet",
+    "category": "People",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a famous person you would like to meet.",
+    "bullet_points": [
+      "who this person is",
+      "why they are famous",
+      "what you would talk to them about",
+      "and explain why you would like to meet this particular person"
+    ]
+  },
+  {
+    "id": "p2_018",
+    "part": 2,
+    "topic": "A Piece of Art or Music",
+    "category": "Arts and Culture",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a piece of art or music that has impressed you.",
+    "bullet_points": [
+      "what the piece of art or music is",
+      "when you first saw or heard it",
+      "what it is about or what it represents",
+      "and explain why it impressed you"
+    ]
+  },
+  {
+    "id": "p2_019",
+    "part": 2,
+    "topic": "A Historical Building or Monument",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a historical building or monument you have visited or know about.",
+    "bullet_points": [
+      "what the building or monument is",
+      "where it is located",
+      "what it looks like",
+      "and explain why you find it interesting or important"
+    ]
+  },
+  {
+    "id": "p2_020",
+    "part": 2,
+    "topic": "An Achievement You Are Proud Of",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe an achievement you are proud of.",
+    "bullet_points": [
+      "what the achievement was",
+      "when and how you achieved it",
+      "how you felt when you achieved it",
+      "and explain why you are proud of this achievement"
+    ]
+  },
+  {
+    "id": "p2_021",
+    "part": 2,
+    "topic": "A Time When You Were Late",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a time when you were late for an important event.",
+    "bullet_points": [
+      "what the event was",
+      "why you were late",
+      "what happened as a result",
+      "and explain how you felt about being late"
+    ]
+  },
+  {
+    "id": "p2_022",
+    "part": 2,
+    "topic": "A Subject You Enjoyed Studying",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a subject you enjoyed studying at school or university.",
+    "bullet_points": [
+      "what the subject was",
+      "who taught it to you",
+      "how you studied it",
+      "and explain why you enjoyed this subject"
+    ]
+  },
+  {
+    "id": "p2_023",
+    "part": 2,
+    "topic": "A Wild Animal",
+    "category": "Objects",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a wild animal that you find interesting.",
+    "bullet_points": [
+      "what the animal is",
+      "where it lives",
+      "what it looks like and how it behaves",
+      "and explain why you find this animal interesting"
+    ]
+  },
+  {
+    "id": "p2_024",
+    "part": 2,
+    "topic": "A Hobby You Would Recommend",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a hobby you would recommend to other people.",
+    "bullet_points": [
+      "what the hobby is",
+      "how you became interested in it",
+      "what equipment or preparation is needed",
+      "and explain why you would recommend this hobby to others"
+    ]
+  },
+  {
+    "id": "p2_025",
+    "part": 2,
+    "topic": "A Time You Helped Someone",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a time when you helped someone.",
+    "bullet_points": [
+      "who you helped and why they needed help",
+      "how you helped them",
+      "how they reacted",
+      "and explain how you felt after helping this person"
+    ]
+  },
+  {
+    "id": "p2_026",
+    "part": 2,
+    "topic": "An Important Invention",
+    "category": "Objects",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe an invention that you think has been very important.",
+    "bullet_points": [
+      "what the invention is",
+      "when it was invented",
+      "how it has changed people's lives",
+      "and explain why you think it is so important"
+    ]
+  },
+  {
+    "id": "p2_027",
+    "part": 2,
+    "topic": "A City You Have Visited",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a city you have visited that you found interesting.",
+    "bullet_points": [
+      "which city it was and where it is located",
+      "when and why you visited",
+      "what you saw and did there",
+      "and explain what made this city interesting to you"
+    ]
+  },
+  {
+    "id": "p2_028",
+    "part": 2,
+    "topic": "A Person Who Has Influenced You",
+    "category": "People",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a person who has had a significant influence on your life.",
+    "bullet_points": [
+      "who this person is",
+      "how long you have known them",
+      "what kind of influence they have had on you",
+      "and explain why their influence has been so significant"
+    ]
+  },
+  {
+    "id": "p2_029",
+    "part": 2,
+    "topic": "A Time You Felt Nervous",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a time when you felt very nervous.",
+    "bullet_points": [
+      "what the situation was",
+      "why you were feeling nervous",
+      "how you dealt with the nerves",
+      "and explain what happened in the end"
+    ]
+  },
+  {
+    "id": "p2_030",
+    "part": 2,
+    "topic": "A Favourite Restaurant or Cafe",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a restaurant or cafe that you enjoy going to.",
+    "bullet_points": [
+      "where it is located",
+      "what kind of food or drinks it serves",
+      "who you usually go there with",
+      "and explain why you enjoy going to this place"
+    ]
+  },
+  {
+    "id": "p2_031",
+    "part": 2,
+    "topic": "A News Story That Interested You",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a news story that you found interesting or important.",
+    "bullet_points": [
+      "what the story was about",
+      "where you read or heard about it",
+      "what happened in the story",
+      "and explain why this story interested or concerned you"
+    ]
+  },
+  {
+    "id": "p2_032",
+    "part": 2,
+    "topic": "Something You Own That Is Important to You",
+    "category": "Objects",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe something you own that is very important to you.",
+    "bullet_points": [
+      "what the object is",
+      "how long you have had it",
+      "how you use it or why you keep it",
+      "and explain why this object is important to you"
+    ]
+  },
+  {
+    "id": "p2_033",
+    "part": 2,
+    "topic": "A Time You Were Surprised",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a time when you were pleasantly surprised.",
+    "bullet_points": [
+      "what happened",
+      "who was involved",
+      "why you were surprised",
+      "and explain how you felt about this surprise"
+    ]
+  },
+  {
+    "id": "p2_034",
+    "part": 2,
+    "topic": "A Piece of Advice You Were Given",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a useful piece of advice that someone gave you.",
+    "bullet_points": [
+      "what the advice was",
+      "who gave you this advice",
+      "when and why they gave it to you",
+      "and explain how this advice has been useful to you"
+    ]
+  },
+  {
+    "id": "p2_035",
+    "part": 2,
+    "topic": "A Traditional Food in Your Country",
+    "category": "Arts and Culture",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a traditional food from your country that you enjoy.",
+    "bullet_points": [
+      "what the food is",
+      "how it is made",
+      "when people usually eat it",
+      "and explain why you enjoy this food"
+    ]
+  },
+  {
+    "id": "p2_036",
+    "part": 2,
+    "topic": "A Time You Faced a Challenge",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a challenge you have faced and overcome.",
+    "bullet_points": [
+      "what the challenge was",
+      "when and how you faced it",
+      "what you did to overcome it",
+      "and explain what you learned from this experience"
+    ]
+  },
+  {
+    "id": "p2_037",
+    "part": 2,
+    "topic": "A Volunteer or Charity Experience",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a time when you did voluntary work or helped a charity.",
+    "bullet_points": [
+      "what the voluntary work was",
+      "why you decided to do it",
+      "what you did during the experience",
+      "and explain how this experience made you feel"
+    ]
+  },
+  {
+    "id": "p2_038",
+    "part": 2,
+    "topic": "An Interesting Neighbour or Colleague",
+    "category": "People",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe an interesting neighbour or work colleague.",
+    "bullet_points": [
+      "who this person is",
+      "how long you have known them",
+      "what makes them interesting",
+      "and explain why you enjoy knowing this person"
+    ]
+  },
+  {
+    "id": "p2_039",
+    "part": 2,
+    "topic": "A Piece of Clothing You Like",
+    "category": "Objects",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a piece of clothing that you particularly like.",
+    "bullet_points": [
+      "what the item of clothing is",
+      "where you got it from",
+      "when you wear it",
+      "and explain why you like it so much"
+    ]
+  },
+  {
+    "id": "p2_040",
+    "part": 2,
+    "topic": "A Time You Were Lost",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a time when you got lost in an unfamiliar place.",
+    "bullet_points": [
+      "where you were",
+      "why you got lost",
+      "what you did to find your way",
+      "and explain how you felt during this experience"
+    ]
+  },
+  {
+    "id": "p2_041",
+    "part": 2,
+    "topic": "A Website You Use Often",
+    "category": "Objects",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a website that you use often.",
+    "bullet_points": [
+      "what the website is",
+      "when and why you started using it",
+      "what you use it for",
+      "and explain why you find it useful or enjoyable"
+    ]
+  },
+  {
+    "id": "p2_042",
+    "part": 2,
+    "topic": "A Natural Place That Impressed You",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a natural place that you found impressive.",
+    "bullet_points": [
+      "where this place is",
+      "when you visited it or how you know about it",
+      "what it looks like",
+      "and explain why you found it impressive"
+    ]
+  },
+  {
+    "id": "p2_043",
+    "part": 2,
+    "topic": "An Interesting Conversation",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe an interesting conversation you have had recently.",
+    "bullet_points": [
+      "who you had the conversation with",
+      "what you were talking about",
+      "where and when this conversation took place",
+      "and explain why this conversation was interesting to you"
+    ]
+  },
+  {
+    "id": "p2_044",
+    "part": 2,
+    "topic": "A Rule You Disagree With",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a rule or law that you think should be changed.",
+    "bullet_points": [
+      "what the rule or law is",
+      "where it applies",
+      "why you disagree with it",
+      "and explain what you think should happen instead"
+    ]
+  },
+  {
+    "id": "p2_045",
+    "part": 2,
+    "topic": "An Enjoyable Day Out",
+    "category": "Experiences",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe an enjoyable day out that you have had.",
+    "bullet_points": [
+      "where you went",
+      "who you went with",
+      "what you did during the day",
+      "and explain why this day was particularly enjoyable"
+    ]
+  },
+  {
+    "id": "p2_046",
+    "part": 2,
+    "topic": "A Local Business",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a local business that you think is particularly good.",
+    "bullet_points": [
+      "what type of business it is",
+      "where it is located",
+      "what makes it different from similar businesses",
+      "and explain why you think this business is good"
+    ]
+  },
+  {
+    "id": "p2_047",
+    "part": 2,
+    "topic": "A Time You Worked in a Team",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a time when you worked as part of a team.",
+    "bullet_points": [
+      "what the task or project was",
+      "who was in the team",
+      "what role you played",
+      "and explain what the experience taught you about working with others"
+    ]
+  },
+  {
+    "id": "p2_048",
+    "part": 2,
+    "topic": "A Language You Would Like to Learn",
+    "category": "Activities",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a language you would like to learn.",
+    "bullet_points": [
+      "what language it is",
+      "why you would like to learn it",
+      "how you would go about learning it",
+      "and explain what you would do if you could speak this language"
+    ]
+  },
+  {
+    "id": "p2_049",
+    "part": 2,
+    "topic": "A Memorable Teacher",
+    "category": "People",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a teacher who had a positive impact on you.",
+    "bullet_points": [
+      "who this teacher was",
+      "what subject they taught",
+      "what made them a good teacher",
+      "and explain what impact this teacher had on your life"
+    ]
+  },
+  {
+    "id": "p2_050",
+    "part": 2,
+    "topic": "A Change You Would Make to Your Hometown",
+    "category": "Places",
+    "avatar": "woman",
+    "prep_time": 60,
+    "speak_time": 120,
+    "prompt": "Describe a change you would like to make to your hometown or city.",
+    "bullet_points": [
+      "what change you would make",
+      "why this change is needed",
+      "how the change could be made",
+      "and explain how this change would benefit people in your hometown"
+    ]
+  }
+]
