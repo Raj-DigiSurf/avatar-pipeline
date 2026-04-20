@@ -14,7 +14,18 @@ from pathlib import Path
 
 log = logging.getLogger(__name__)
 
-FFMPEG = os.getenv("FFMPEG_PATH", "ffmpeg")
+
+def _ffmpeg() -> str:
+    if p := os.getenv("FFMPEG_PATH"):
+        return p
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except ImportError:
+        return "ffmpeg"
+
+
+FFMPEG = _ffmpeg()
 
 
 class VideoEncoder:

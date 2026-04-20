@@ -1,15 +1,3 @@
-from .tts import TTSEngine
-from .lipsync import LipSyncEngine
-from .enhance import FaceEnhancer
-from .encode import VideoEncoder
-from .upload import R2Uploader
-from .db import ExerciseDB
+# Modules are imported lazily in generate.py — do not import at package level
+# to avoid requiring all deps just to import the package.
 
-__all__ = [
-    "TTSEngine",
-    "LipSyncEngine",
-    "FaceEnhancer",
-    "VideoEncoder",
-    "R2Uploader",
-    "ExerciseDB",
-]
