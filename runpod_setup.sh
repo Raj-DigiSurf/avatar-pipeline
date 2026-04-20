@@ -17,7 +17,7 @@ echo ""
 
 # ── 1. Python deps ────────────────────────────────────────────────────────────
 echo "[1/5] Installing Python dependencies..."
-pip install -q -r requirements.txt
+pip3 install -q -r requirements.txt
 
 # ── 2. Clone MuseTalk ─────────────────────────────────────────────────────────
 echo "[2/5] Cloning MuseTalk..."
@@ -25,7 +25,7 @@ mkdir -p deps
 if [ ! -d "deps/MuseTalk" ]; then
     git clone https://github.com/TMElyralab/MuseTalk deps/MuseTalk
     cd deps/MuseTalk
-    pip install -q -r requirements.txt
+    pip3 install -q -r requirements.txt
     cd ../..
     echo "    MuseTalk installed."
 else
@@ -68,14 +68,14 @@ read -rp "Enter a, b, or c: " mode
 
 case "$mode" in
     a)
-        python generate.py --exercises samples/sample_exercises.json
+        python3 generate.py --exercises samples/sample_exercises.json
         ;;
     b)
-        python generate.py --exercises samples/sample_exercises.json --no-upload
+        python3 generate.py --exercises samples/sample_exercises.json --no-upload
         echo "Videos saved to output/local/"
         ;;
     c)
-        python generate.py --exercises samples/sample_exercises.json --skip-lipsync
+        python3 generate.py --exercises samples/sample_exercises.json --skip-lipsync
         ;;
     *)
         echo "Invalid choice. Run manually:"
