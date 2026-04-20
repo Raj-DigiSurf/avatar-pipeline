@@ -13,7 +13,8 @@ SadTalker:
 
 Avatar source:
   Each persona needs a short looping reference video (2–5 s, 30 fps, 512x512+).
-  Place at avatars/older_man.mp4, avatars/woman.mp4, avatars/younger_man.mp4.
+  Place at avatars/older_man.mp4, avatars/australian_woman.mp4,
+  avatars/uk_woman.mp4, avatars/younger_man.mp4.
   The avatar video is looped automatically to match audio length.
 """
 
@@ -25,9 +26,12 @@ from pathlib import Path
 log = logging.getLogger(__name__)
 
 AVATAR_MAP = {
-    "older_man":   "avatars/older_man.mp4",
-    "woman":       "avatars/woman.mp4",
-    "younger_man": "avatars/younger_man.mp4",
+    "older_man":          "avatars/older_man.mp4",
+    "australian_woman":   "avatars/australian_woman.mp4",
+    "uk_woman":           "avatars/uk_woman.mp4",
+    "younger_man":        "avatars/younger_man.mp4",
+    # legacy alias
+    "woman":              "avatars/australian_woman.mp4",
 }
 
 

@@ -7,18 +7,26 @@ will extend or trim it to match audio length automatically.
 
 Run:  python tools/image_to_video.py
 
-Output: avatars/older_man.mp4, avatars/woman.mp4, avatars/younger_man.mp4
+Output: avatars/older_man.mp4, avatars/australian_woman.mp4,
+        avatars/uk_woman.mp4, avatars/younger_man.mp4
 
-Requires: ffmpeg on PATH
+Requires: ffmpeg on PATH, or imageio-ffmpeg (pip install imageio-ffmpeg)
 """
 
 import subprocess
 import sys
 from pathlib import Path
 
+try:
+    import imageio_ffmpeg
+    FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
+except ImportError:
+    FFMPEG = "ffmpeg"
+
 AVATARS = [
     "older_man",
-    "woman",
+    "australian_woman",
+    "uk_woman",
     "younger_man",
 ]
 
@@ -37,7 +45,7 @@ def image_to_video(name: str) -> None:
         return
 
     cmd = [
-        "ffmpeg", "-y",
+        FFMPEG, "-y",
         "-loop", "1",
         "-i", str(src),
         "-t", str(DURATION),
