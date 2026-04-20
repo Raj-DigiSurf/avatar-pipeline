@@ -43,7 +43,17 @@ class TTSEngine:
             self._tts = TTS(self.MODEL_NAME).to(device)
             log.info("XTTS-v2 ready.")
 
-    def generate(self, text: str, output_path: str | Path, language: str = "en") -> Path:
+    VOICE_MAP = {
+        "australian_woman": "avatars/voices/australian_woman.wav",
+        "uk_woman":         "avatars/voices/uk_woman.wav",
+        "older_man":        "avatars/voices/older_man.wav",
+        "younger_man":      "avatars/voices/younger_man.wav",
+        "woman":            "avatars/voices/australian_woman.wav",
+    }
+    DEFAULT_VOICE = "avatars/voices/default.wav"
+
+    def generate(self, text: str, output_path: str | Path,
+                 language: str = "en", avatar: str | None = None) -> Path:
         """Synthesise text to a WAV file. Returns the output path."""
         output_path = Path(output_path)
         output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -57,7 +67,15 @@ class TTSEngine:
             engine.runAndWait()
             engine.stop()
         else:
-            self._tts.tts_to_file(text=text, file_path=str(output_path), language=language)
+            speaker_wav = self.VOICE_MAP.get(avatar or "", self.DEFAULT_VOICE)
+            if not Path(speaker_wav).exists():
+                speaker_wav = self.DEFAULT_VOICE
+            self._tts.tts_to_file(
+                text=text,
+                file_path=str(output_path),
+                language=language,
+                speaker_wav=speaker_wav,
+            )
 
         log.debug("TTS -> %s", output_path)
         return output_path

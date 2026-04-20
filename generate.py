@@ -181,7 +181,7 @@ def process_exercise(
 
     try:
         # 1. TTS
-        audio = tts.generate(exercise["text"], work_dir / "audio.wav")
+        audio = tts.generate(exercise["text"], work_dir / "audio.wav", avatar=exercise.get("avatar"))
 
         # 2. Lipsync (or static fallback)
         if skip_lipsync:
