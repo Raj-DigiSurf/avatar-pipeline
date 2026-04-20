@@ -80,7 +80,7 @@ class LipSyncEngine:
     # ── MuseTalk ──────────────────────────────────────────────────────
 
     def _run_musetalk(self, audio: Path, avatar: Path, output: Path) -> Path:
-        script = self.musetalk_dir / "scripts" / "inference.py"
+        script = (self.musetalk_dir / "scripts" / "inference.py").resolve()
         cmd = [
             os.getenv("PYTHON_BIN", "python3"), str(script),
             "--audio_path", str(audio.resolve()),
@@ -94,7 +94,7 @@ class LipSyncEngine:
     # ── SadTalker ─────────────────────────────────────────────────────
 
     def _run_sadtalker(self, audio: Path, avatar: Path, output: Path) -> Path:
-        script = self.sadtalker_dir / "inference.py"
+        script = (self.sadtalker_dir / "inference.py").resolve()
         cmd = [
             os.getenv("PYTHON_BIN", "python3"), str(script),
             "--driven_audio", str(audio.resolve()),
