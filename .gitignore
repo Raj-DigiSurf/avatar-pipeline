@@ -7,11 +7,10 @@
 # Temp pipeline output
 output/
 
-# Avatar source files (large; commit separately or document location)
-avatars/*.mp4
-avatars/*.mov
+# Avatar enhanced/intermediate files
 avatars/*_enhanced.png
 avatars/*_enhanced.jpg
+# Note: avatar MP4s (~55KB each, static loops) ARE tracked — needed for lipsync
 
 # Dependencies cloned locally
 deps/
