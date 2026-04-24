@@ -1,5 +1,6 @@
 # Secrets
 .env
+runpod_oneliner.sh
 
 # Claude Code local settings
 .claude/
