@@ -59,27 +59,37 @@ fi
 # ── 5. Run 5-sample test ──────────────────────────────────────────────────────
 echo "[5/5] Running 5-sample test..."
 echo ""
-echo "Choose test mode:"
-echo "  a) Full test — real lipsync + R2 upload + Supabase (needs .env filled)"
-echo "  b) Local test — real lipsync, NO upload (outputs saved to output/local/)"
-echo "  c) Skip lipsync — TTS + static video + upload (quick connectivity test)"
-echo ""
-read -rp "Enter a, b, or c: " mode
+
+# Accept --mode flag for non-interactive use, else prompt
+mode="${MODE:-}"
+if [ -z "$mode" ]; then
+    echo "Choose test mode:"
+    echo "  a) Full test — real lipsync + R2 upload + Supabase (needs .env filled)"
+    echo "  b) Local test — real lipsync, NO upload (outputs saved to output/local/)"
+    echo "  c) Skip lipsync — TTS + static video + upload (quick connectivity test)"
+    echo "  s) Skip test entirely"
+    echo ""
+    read -rp "Enter a, b, c, or s: " mode
+fi
 
 case "$mode" in
-    a)
+    a|full)
         python3 generate.py --exercises samples/sample_exercises.json
         ;;
-    b)
+    b|local)
         python3 generate.py --exercises samples/sample_exercises.json --no-upload
         echo "Videos saved to output/local/"
         ;;
-    c)
+    c|quick)
         python3 generate.py --exercises samples/sample_exercises.json --skip-lipsync
+        ;;
+    s|skip)
+        echo "    Skipping test. Run manually later:"
+        echo "    python3 generate.py --exercises samples/sample_exercises.json --no-upload"
         ;;
     *)
         echo "Invalid choice. Run manually:"
-        echo "  python generate.py --exercises samples/sample_exercises.json --no-upload"
+        echo "  python3 generate.py --exercises samples/sample_exercises.json --no-upload"
         ;;
 esac
 

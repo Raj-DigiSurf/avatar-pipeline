@@ -42,6 +42,12 @@ from tqdm import tqdm
 
 load_dotenv()
 
+# Fix Windows SSL: first boto3/supabase connection can be slow (~30s)
+# due to Windows SChannel revocation checks. This uses certifi CA bundle
+# to bypass SChannel entirely. No-op on Linux.
+from pipeline.ssl_fix import patch_ssl
+patch_ssl()
+
 # ── logging ───────────────────────────────────────────────────────────────────
 
 Path("output").mkdir(exist_ok=True)
