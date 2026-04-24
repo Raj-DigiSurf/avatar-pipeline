@@ -29,19 +29,19 @@ WORKDIR="/workspace/Avatar-Pipeline"
 
 # ── 1. Clone repo if not already present ─────────────────────────────────────
 if [ ! -d "$WORKDIR" ]; then
-    echo "[1/7] Cloning repository..."
+    echo "[1/8] Cloning repository..."
     cd /workspace
     git clone https://github.com/Raj-DigiSurf/avatar-pipeline.git Avatar-Pipeline
     cd "$WORKDIR"
     echo "    ✓ Cloned to $WORKDIR"
 else
     cd "$WORKDIR"
-    echo "[1/7] Repo already at $WORKDIR — pulling latest..."
+    echo "[1/8] Repo already at $WORKDIR — pulling latest..."
     git pull --ff-only || echo "    (pull skipped — local changes present)"
 fi
 
 # ── 2. Check .env ────────────────────────────────────────────────────────────
-echo "[2/7] Checking .env..."
+echo "[2/8] Checking .env..."
 if [ ! -f ".env" ]; then
     cp .env.example .env
     echo ""
@@ -65,12 +65,12 @@ else
 fi
 
 # ── 3. Install Python deps ──────────────────────────────────────────────────
-echo "[3/7] Installing Python dependencies..."
+echo "[3/8] Installing Python dependencies..."
 pip3 install -q -r requirements.txt 2>&1 | tail -5
 echo "    ✓ Python deps installed"
 
 # ── 4. Install PyTorch with CUDA (skip if already present) ──────────────────
-echo "[4/7] Checking PyTorch + CUDA..."
+echo "[4/8] Checking PyTorch + CUDA..."
 python3 -c "import torch; assert torch.cuda.is_available(), 'No CUDA'; print(f'    ✓ PyTorch {torch.__version__} + CUDA {torch.version.cuda} ({torch.cuda.get_device_name(0)})')" 2>/dev/null \
     || {
         echo "    Installing PyTorch with CUDA 11.8..."
@@ -79,7 +79,7 @@ python3 -c "import torch; assert torch.cuda.is_available(), 'No CUDA'; print(f' 
     }
 
 # ── 5. Clone MuseTalk ───────────────────────────────────────────────────────
-echo "[5/7] Setting up MuseTalk..."
+echo "[5/8] Setting up MuseTalk..."
 mkdir -p deps
 if [ ! -d "deps/MuseTalk" ]; then
     git clone https://github.com/TMElyralab/MuseTalk deps/MuseTalk
@@ -92,7 +92,7 @@ else
 fi
 
 # ── 6. Download GFPGAN model ────────────────────────────────────────────────
-echo "[6/7] Downloading GFPGAN model..."
+echo "[6/8] Downloading GFPGAN model..."
 if [ ! -f "deps/GFPGANv1.4.pth" ]; then
     wget -q -O deps/GFPGANv1.4.pth \
         "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth"
@@ -101,8 +101,17 @@ else
     echo "    ✓ GFPGAN model already present"
 fi
 
-# ── 7. Run 5-sample test ────────────────────────────────────────────────────
-echo "[7/7] Running 5-sample test (real lipsync, no upload)..."
+# ── 7. Generate reference voice WAVs for XTTS-v2 ────────────────────────────
+echo "[7/8] Generating reference voice WAVs..."
+if [ ! -f "avatars/voices/default.wav" ]; then
+    python3 tools/generate_voices.py
+    echo "    ✓ Voice references generated"
+else
+    echo "    ✓ Voice references already present"
+fi
+
+# ── 8. Run 5-sample test ────────────────────────────────────────────────────
+echo "[8/8] Running 5-sample test (real lipsync, no upload)..."
 echo ""
 python3 generate.py --exercises samples/sample_exercises.json --no-upload
 echo ""

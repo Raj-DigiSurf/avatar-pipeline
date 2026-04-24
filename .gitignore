@@ -11,7 +11,9 @@ output/
 # Avatar enhanced/intermediate files
 avatars/*_enhanced.png
 avatars/*_enhanced.jpg
+avatars/voices/
 # Note: avatar MP4s (~55KB each, static loops) ARE tracked — needed for lipsync
+# Note: voice WAVs are generated on GPU host via tools/generate_voices.py
 
 # Dependencies cloned locally
 deps/
