@@ -20,8 +20,12 @@ Avatar source:
 
 import logging
 import os
+import shutil
 import subprocess
+import tempfile
 from pathlib import Path
+
+import yaml
 
 log = logging.getLogger(__name__)
 
@@ -81,14 +85,37 @@ class LipSyncEngine:
 
     def _run_musetalk(self, audio: Path, avatar: Path, output: Path) -> Path:
         script = (self.musetalk_dir / "scripts" / "inference.py").resolve()
+        task_name = output.stem
+        result_dir = tempfile.mkdtemp(prefix="musetalk_")
+
+        config = {
+            task_name: {
+                "video_path": str(avatar.resolve()),
+                "audio_path": str(audio.resolve()),
+                "bbox_shift": 0,
+            }
+        }
+        config_path = Path(result_dir) / "cfg.yaml"
+        config_path.write_text(yaml.dump(config, default_flow_style=False))
+
         cmd = [
             os.getenv("PYTHON_BIN", "python3"), str(script),
-            "--audio_path", str(audio.resolve()),
-            "--video_path", str(avatar.resolve()),
-            "--output_path", str(output.resolve()),
+            "--inference_config", str(config_path),
+            "--result_dir", result_dir,
+            "--output_vid_name", task_name,
             "--fps", str(os.getenv("OUTPUT_FPS", "30")),
+            "--version", "v15",
         ]
-        self._run(cmd, cwd=self.musetalk_dir, label="MuseTalk")
+        try:
+            self._run(cmd, cwd=self.musetalk_dir, label="MuseTalk")
+            generated = Path(result_dir) / "v15" / f"{task_name}.mp4"
+            if not generated.exists():
+                raise FileNotFoundError(
+                    f"MuseTalk did not produce output for {task_name}"
+                )
+            shutil.move(str(generated), str(output))
+        finally:
+            shutil.rmtree(result_dir, ignore_errors=True)
         return output
 
     # ── SadTalker ─────────────────────────────────────────────────────
