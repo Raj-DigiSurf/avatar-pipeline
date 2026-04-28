@@ -142,6 +142,7 @@ class LipSyncEngine:
     @staticmethod
     def _run(cmd: list, cwd: Path, label: str) -> None:
         log.debug("%s cmd: %s", label, " ".join(cmd))
+        cwd = Path(cwd).resolve()
         env = {**os.environ, "PYTHONPATH": str(cwd)}
         result = subprocess.run(cmd, cwd=str(cwd), env=env, capture_output=True, text=True)
         if result.returncode != 0:
