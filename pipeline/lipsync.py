@@ -102,7 +102,7 @@ class LipSyncEngine:
             os.getenv("PYTHON_BIN", "python3"), str(script),
             "--inference_config", str(config_path),
             "--result_dir", result_dir,
-            "--output_vid_name", task_name,
+            "--output_vid_name", f"{task_name}.mp4",
             "--fps", str(os.getenv("OUTPUT_FPS", "30")),
             "--version", "v15",
         ]
